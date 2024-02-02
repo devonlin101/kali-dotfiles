@@ -49,7 +49,7 @@ require("mason-lspconfig").setup({
     "rust_analyzer",
     "tailwindcss",
   },
-  automatic_installation = true,
+  automatic_installation = false,
 })
 require("ibl").setup({
   scope = {
