@@ -259,7 +259,6 @@ if [ -f /etc/zsh_command_not_found ]; then
 fi
 if [ -z "$TMUX" ]
 then
-    tmux attach || tmux new -s TMUX
+    tmux attach || tmux 
 fi
-
 

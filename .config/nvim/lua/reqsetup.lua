@@ -1,10 +1,21 @@
-vim.cmd.colorscheme("catppuccin-macchiato")
 -- colorscheme catppuccin " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
 require("everforest").load()
 require("hop").setup()
 require("Comment").setup()
-require("bufferline").setup({})
 require("gitsigns").setup()
+require('bufferline').setup({
+  highlights = {
+    fill = {
+      -- fg = '<colour-value-here>',
+      bg = '#2c343b',
+    },
+    -- background = {
+    --   fg = '<colour-value-here>',
+    --   bg = '<colour-value-here>',
+    -- },
+  }
+}
+)
 require("mason").setup({
   opts = {
     ensure_installed = {

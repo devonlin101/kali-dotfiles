@@ -14,19 +14,18 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 
-  { "catppuccin/nvim",                     name = "catppuccin", priority = 1000 },
   "williamboman/mason.nvim",
   "williamboman/mason-lspconfig.nvim",
   "neovim/nvim-lspconfig",
   "lewis6991/gitsigns.nvim",
   "freddiehaddad/feline.nvim",
-  "hrsh7th/nvim-cmp",    -- Autocompletion plugin
+  "hrsh7th/nvim-cmp",     -- Autocompletion plugin
   "hrsh7th/cmp-nvim-lsp", -- LSP source for nvim-cmp
   "hrsh7th/cmp-buffer",
   "hrsh7th/cmp-path",
   "hrsh7th/cmp-cmdline",
   "saadparwaiz1/cmp_luasnip", -- Snippets source for nvim-cmp
-  "L3MON4D3/LuaSnip",        -- Snippets plugin
+  "L3MON4D3/LuaSnip",         -- Snippets plugin
   "hrsh7th/vim-vsnip-integ",
   "christoomey/vim-tmux-navigator",
   {
@@ -41,7 +40,7 @@ local plugins = {
       "nvim-tree/nvim-web-devicons",
     },
   },
-  { "akinsho/bufferline.nvim",             version = "*",       dependencies = "nvim-tree/nvim-web-devicons" },
+  { "akinsho/bufferline.nvim",             version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
   { "lukas-reineke/indent-blankline.nvim", main = "ibl" },
   {
     "windwp/nvim-autopairs",
