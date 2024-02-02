@@ -262,3 +262,8 @@ then
     tmux attach || tmux 
 fi
 
+
+# fnm
+export PATH="/home/devonlin101/.local/share/fnm:$PATH"
+eval "`fnm env`"
+eval "$(fnm env --use-on-cd)"
