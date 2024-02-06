@@ -29,6 +29,15 @@ local plugins = {
 	"hrsh7th/vim-vsnip-integ",
 	"christoomey/vim-tmux-navigator",
 	{
+		"ibhagwan/fzf-lua",
+		-- optional for icon support
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		config = function()
+			-- calling `setup` is optional for customization
+			require("fzf-lua").setup({})
+		end,
+	},
+	{
 		"smoka7/hop.nvim",
 		version = "*",
 	},
@@ -137,6 +146,10 @@ local plugins = {
 	-- "hrsh7th/vim-vsnip",
 	-- "mhartington/formatter.nvim",
 	-- "mfussenegger/nvim-lint",
+	-- {
+	-- 	"nvim-lualine/lualine.nvim",
+	-- 	dependencies = { "nvim-tree/nvim-web-devicons" },
+	-- },
 	-- {
 	-- 	"utilyre/barbecue.nvim",
 	-- 	name = "barbecue",

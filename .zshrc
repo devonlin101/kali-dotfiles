@@ -267,3 +267,5 @@ fi
 export PATH="/home/devonlin101/.local/share/fnm:$PATH"
 eval "`fnm env`"
 eval "$(fnm env --use-on-cd)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

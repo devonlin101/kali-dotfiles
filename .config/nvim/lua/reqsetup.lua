@@ -2,63 +2,63 @@
 require("everforest").load()
 require("hop").setup()
 require("Comment").setup()
+-- require("lualine").setup()
 require("gitsigns").setup()
-require('bufferline').setup({
-  highlights = {
-    fill = {
-      -- fg = '<colour-value-here>',
-      bg = '#2c343b',
-    },
-    -- background = {
-    --   fg = '<colour-value-here>',
-    --   bg = '<colour-value-here>',
-    -- },
-  }
-}
-)
+require("bufferline").setup({
+	highlights = {
+		fill = {
+			-- fg = '<colour-value-here>',
+			bg = "#2c343b",
+		},
+		-- background = {
+		--   fg = '<colour-value-here>',
+		--   bg = '<colour-value-here>',
+		-- },
+	},
+})
 require("mason").setup({
-  opts = {
-    ensure_installed = {
-      "typescript-language-server",
-    },
-  },
+	opts = {
+		ensure_installed = {
+			"typescript-language-server",
+		},
+	},
 })
 require("nvim-tree").setup({
-  disable_netrw = true,
-  hijack_netrw = true,
-  renderer = {
-    highlight_opened_files = "all",
-    indent_markers = {
-      enable = true,
-    },
-  },
-  actions = {
-    open_file = {
-      quit_on_open = true,
-    },
-  },
+	disable_netrw = true,
+	hijack_netrw = true,
+	renderer = {
+		highlight_opened_files = "all",
+		indent_markers = {
+			enable = true,
+		},
+	},
+	actions = {
+		open_file = {
+			quit_on_open = true,
+		},
+	},
 })
 require("mason-lspconfig").setup({
-  ensure_installed = {
-    "clangd",
-    "cmake",
-    "bashls",
-    "pyright",
-    "tsserver",
-    "lua_ls",
-    "rust_analyzer",
-    "tailwindcss",
-  },
-  automatic_installation = false,
+	ensure_installed = {
+		"clangd",
+		"cmake",
+		"bashls",
+		"pyright",
+		"tsserver",
+		"lua_ls",
+		"rust_analyzer",
+		"tailwindcss",
+	},
+	automatic_installation = false,
 })
 require("ibl").setup({
-  scope = {
-    show_exact_scope = true,
-    highlight = { "Function", "Label" },
-    include = {
-      node_type = { ["*"] = { "*" } },
-    },
-  },
+	scope = {
+		show_exact_scope = true,
+		highlight = { "Function", "Label" },
+		include = {
+			node_type = { ["*"] = { "*" } },
+		},
+	},
 })
 -- require("telescope").setup({
 -- 	defaults = {
