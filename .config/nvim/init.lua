@@ -6,7 +6,6 @@ vim.g.python3_host_prog = "/bin/python3"
 
 require("options")
 require("plugins")
--- require("evillualine")
 require("reqsetup")
 require("keys")
 require("lspsettings")
